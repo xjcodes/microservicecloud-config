@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+--- # 在单一文件中，可用连续三个连字号（---）区分多个文件
+spring:
+  profiles: dev
+  application:
+    name: microservicecloud-config-jake-dev
+
+---
+
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-jake-test
