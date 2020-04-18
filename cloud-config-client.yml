@@ -6,7 +6,7 @@ spring:
 --- # 在单一文件中，可用连续三个连字号（---）区分多个文件
 
 config:
-  info: cloud-config-client-dev-5
+  info: cloud-config-client-dev-6
 
 spring:
   profiles: dev
