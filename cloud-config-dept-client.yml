@@ -10,7 +10,7 @@ server:
 spring:
   profiles: dev
   application: 
-    name: microservicecloud-config-dept-client # 命名当前微服务的名称，这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
+    name: cloud-provider-dept # 命名当前微服务的名称，这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
   datasource:
     # 使用阿里的Druid连接池
     type: com.alibaba.druid.pool.DruidDataSource
@@ -45,13 +45,13 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/
   # 细节维护，自定义Eureka服务中心status显示的名称 ,也可以使用默认
   instance:
-    instance-id: microservicecloud-dept8001
+    instance-id: cloud-provider-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址
 
 # Eureka服务注册中心的`info`超链接的`Error Page`改为提供正确的信息
 # 根路径开始添加
 info:
-  app.name: jake-microservicecloud
+  app.name: jake-cloud-provider-dept
   company.name: www.jake.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
@@ -64,7 +64,7 @@ server:
 spring:
   profiles: test
   application: 
-    name: microservicecloud-config-dept-client # 命名当前微服务的名称，这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
+    name: cloud-provider-dept # 命名当前微服务的名称，这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
   datasource:
     # 使用阿里的Druid连接池
     type: com.alibaba.druid.pool.DruidDataSource
@@ -99,13 +99,13 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/
   # 细节维护，自定义Eureka服务中心status显示的名称 ,也可以使用默认
   instance:
-    instance-id: microservicecloud-dept8001
+    instance-id: cloud-provider-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址
 
 # Eureka服务注册中心的`info`超链接的`Error Page`改为提供正确的信息
 # 根路径开始添加
 info:
-  app.name: jake-microservicecloud
+  app.name: jake-cloud-provider-dept
   company.name: www.jake.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
