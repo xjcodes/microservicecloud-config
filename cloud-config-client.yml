@@ -10,7 +10,7 @@ server:
 spring:
   profiles: dev
   application: 
-    name: cloud-config-client
+    name: cloud-config-client-01
 
 eureka: 
   client: 
