@@ -8,7 +8,7 @@ server:
   port: 8201
 
 config:
-  info: cloud-config-client-dev
+  info: cloud-config-client-dev-2
 
 spring:
   profiles: dev
