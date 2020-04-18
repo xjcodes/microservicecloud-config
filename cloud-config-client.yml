@@ -4,8 +4,6 @@ spring:
       - dev
 
 --- # 在单一文件中，可用连续三个连字号（---）区分多个文件
-server: 
-  port: 8201
 
 config:
   info: cloud-config-client-dev-2
@@ -15,15 +13,9 @@ spring:
   application: 
     name: cloud-config-client
 
-eureka: 
-  client: 
-    server-url: 
-      defaultZone: http://eureka7001.com:7001/eureka/
 
 ---
 
-server: 
-  port: 8202
   
 config:
   info: cloud-config-client-dev
@@ -33,7 +25,3 @@ spring:
   application: 
     name: cloud-config-client
 
-eureka: 
-  client: 
-    server-url: 
-      defaultZone: http://eureka7001.com:7001/eureka/
