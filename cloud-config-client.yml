@@ -7,10 +7,13 @@ spring:
 server: 
   port: 8201
 
+config:
+  info: cloud-config-client-dev
+
 spring:
   profiles: dev
   application: 
-    name: cloud-config-client-01
+    name: cloud-config-client
 
 eureka: 
   client: 
@@ -21,6 +24,9 @@ eureka:
 
 server: 
   port: 8202
+  
+config:
+  info: cloud-config-client-dev
   
 spring:
   profiles: test
